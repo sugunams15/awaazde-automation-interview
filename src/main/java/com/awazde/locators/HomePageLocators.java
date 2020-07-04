@@ -3,11 +3,12 @@ package com.awazde.locators;
 import org.openqa.selenium.By;
 
 public enum HomePageLocators {
-	TEMPERATURE("id#temperature"),
-	BUY_MOISTURIZERS_BTN("xpath#////button[text()='Buy moisturizers']"),
+	TEMPERATURE("xpath#//span[@id='temperature']"),
+	BUY_MOISTURIZERS_BTN("xpath#//button[text()='Buy moisturizers']"),
 	BUY_SUNSCREENS_BTN("xpath#//button[text()='Buy sunscreens']"),
 	MOISTURIZER_DESC("xpath#//h3[text()='Moisturizers']/parent::div/p"),
-	SUNSCREEN_DESC("xpath#//h3[text()='Moisturizers']/parent::div/p"),
+	SUNSCREEN_DESC("xpath#//h3[text()='Sunscreens']/parent::div/p"),
+	HOME_SCREEN_HEADING("xpath#//h2[text()='Current temperature']")
 	;
 	
 	private String value;
